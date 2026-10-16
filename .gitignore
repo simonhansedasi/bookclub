@@ -32,3 +32,6 @@ why-physics-works-notes.md
 *.tiff
 *.ico
 reading_list.md
+
+# Junk
+.ipynb_checkpoints/
