@@ -23,9 +23,9 @@ RECIPIENTS = [
     "madeleinejbergeron@gmail.com",
     "heli.anderson@gmail.com",
     "gaildbergeron@gmail.com",
+    "janlchidester@gmail.com"
 ]
 EVENT_KEYWORD = "gma book club"
-MAX_UPCOMING = 4
 
 
 def find_bookclub_event():
@@ -93,7 +93,7 @@ def compose_body(event_date: date, upcoming: list) -> str:
 
     book_items = "".join(
         f"<li>{_format_book_entry(b)}</li>"
-        for b in upcoming[:MAX_UPCOMING]
+        for b in upcoming
     )
     link = (DIR / "link.md").read_text().strip()
 
